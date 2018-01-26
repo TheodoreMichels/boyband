@@ -1,8 +1,46 @@
 body {
-  background-color: #e6dcd2; }
+  margin: 0;
+  padding: 60px;
+  background-color: #e6dcd2;
+  font-family: sans-serif;
+  overflow-x: hidden; }
+
+h1, h2, h3 {
+  margin: 0; }
 
 h1 {
-  font-size: 50px;
-  font-family: sans-serif; }
+  font-size: 80px; }
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 60px 0;
+  color: grey; }
+
+#bottom-block {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: -50vh;
+  background-color: #142850;
+  transform: rotateZ(-20deg) translateY(300px); }
+
+#mid-block {
+  width: 20vw;
+  height: 20vw;
+  background-color: #a01450;
+  position: fixed;
+  bottom: 200px;
+  right: 20vw;
+  transform: rotateZ(-20deg);
+  animation: move 10s infinite; }
+
+@keyframes move {
+  0% {
+    transform: rotateZ(-20deg) translateX(-400px); }
+  50% {
+    transform: rotateZ(-20deg) translateX(0px); }
+  100% {
+    transform: rotateZ(-20deg) translateX(-400px); } }
 
 /*# sourceMappingURL=main.css.map */
