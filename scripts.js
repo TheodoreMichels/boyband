@@ -39,4 +39,14 @@ $(function() {
     }
     
     setDeceleratingTimeout(changeTag, 10, 30);
+    
+    $(window).on("scroll", function(){
+        var scroll = $(window).scrollTop();
+        
+        if(scroll > 800){
+            $(".top-fixed").fadeOut();
+        }else{
+            $(".top-fixed").fadeIn();
+        }
+    });
 });

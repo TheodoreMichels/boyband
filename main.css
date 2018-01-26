@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 60px;
   background-color: #e6dcd2;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden; }
 
 h1, h2, h3 {
@@ -11,29 +11,38 @@ h1, h2, h3 {
 h1 {
   font-size: 80px; }
 
+#tagline {
+  font-size: 50px;
+  font-weight: 500; }
+
+.top-fixed {
+  position: fixed;
+  top: 60px;
+  left: 60px; }
+
 h2 {
   font-size: 30px;
   text-transform: uppercase;
-  margin: 60px 0;
+  margin: 30px 0;
   color: grey; }
 
 #bottom-block {
-  width: 100vw;
+  width: 200vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   bottom: -50vh;
   background-color: #142850;
-  transform: rotateZ(-20deg) translateY(300px); }
+  transform: rotateZ(-20deg) translateX(-40%) translateY(0px); }
 
 #mid-block {
   width: 20vw;
   height: 20vw;
   background-color: #a01450;
-  position: fixed;
+  position: absolute;
   bottom: 200px;
   right: 20vw;
   transform: rotateZ(-20deg);
-  animation: move 10s infinite; }
+  animation: move 20s infinite; }
 
 @keyframes move {
   0% {
@@ -42,5 +51,25 @@ h2 {
     transform: rotateZ(-20deg) translateX(0px); }
   100% {
     transform: rotateZ(-20deg) translateX(-400px); } }
+#dudes {
+  margin-top: 250vh; }
+  #dudes h1 {
+    text-align: center;
+    margin: 60px; }
+  #dudes .dude-gallery {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1200px; }
+  #dudes .dude {
+    flex: 1;
+    height: 400px; }
+    #dudes .dude .pic {
+      overflow: hidden;
+      width: 300px;
+      height: 100%;
+      margin: 0 auto;
+      background-color: lightgrey;
+      background-position: center center;
+      background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */
